@@ -986,7 +986,7 @@ async def Oof(woof):
 async def moon(moone):
     deq = deque(list("🌗🌘🌑🌒🌓🌔🌕🌖"))
     try:
-        for _ in range(32):
+        for _ in range(150):
             await sleep(0.1)
             await moone.edit("".join(deq))
             deq.rotate(1)
@@ -998,7 +998,7 @@ async def moon(moone):
 async def earth(event):
     deq = deque(list("🌏🌍🌎🌎🌍🌏🌍🌎"))
     try:
-        for _ in range(32):
+        for _ in range(150):
             await sleep(0.1)
             await event.edit("".join(deq))
             deq.rotate(1)
@@ -1010,7 +1010,7 @@ async def earth(event):
 async def clock(event):
     deq = deque(list("🕙🕘🕗🕖🕕🕔🕓🕒🕑🕐🕛"))
     try:
-        for _ in range(32):
+        for _ in range(150):
             await sleep(0.1)
             await event.edit("".join(deq))
             deq.rotate(1)
@@ -1022,7 +1022,7 @@ async def clock(event):
 async def rain(event):
     deq = deque(list("☀️🌤⛅️🌥☁️🌧⛈"))
     try:
-        for _ in range(32):
+        for _ in range(150):
             await sleep(0.1)
             await event.edit("".join(deq))
             deq.rotate(1)
@@ -1034,7 +1034,7 @@ async def rain(event):
 async def love(event):
     deq = deque(list("❤️🧡💛💚💙💜🖤💕💞💓💗💖💘💝"))
     try:
-        for _ in range(32):
+        for _ in range(150):
             await sleep(0.1)
             await event.edit("".join(deq))
             deq.rotate(1)
