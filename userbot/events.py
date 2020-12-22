@@ -145,7 +145,6 @@ def register(**args):
                         file.write(ftext)
 
                     if LOGSPAMMER:
-                        
 
                     await check.client.send_file(send_to,
                                                  "error.log",
