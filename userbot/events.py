@@ -146,7 +146,7 @@ def register(**args):
 
                     if LOGSPAMMER:
                         await check.respond(
-                            "`Error`"
+                            "``"
                         )
 
                     await check.client.send_file(send_to,
