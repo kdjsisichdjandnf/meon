@@ -9,7 +9,7 @@ import sys
 from asyncio import create_subprocess_shell as asyncsubshell
 from asyncio import subprocess as asyncsub
 from os import remove
-from time import gmtime, strftime, sleep
+from time import gmtime, strftime
 from traceback import format_exc
 
 from telethon import events
@@ -148,7 +148,7 @@ def register(**args):
                         await check.respond(
                             "`Error`"
                         )
-                    sleep(1)
+                    
 
                     await check.client.send_file(send_to,
                                                  "error.log",
