@@ -148,7 +148,6 @@ def register(**args):
                         await check.respond(
                             "`Error`"
                         )
-                    
 
                     await check.client.send_file(send_to,
                                                  "error.log",
