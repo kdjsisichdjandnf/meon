@@ -20,6 +20,7 @@ from userbot.utils import (
     chrome, humanbytes, time_formatter, md5, human_to_bytes
 )
 
+
 @register(outgoing=True, pattern="^.magisk$")
 async def magisk(request):
     """magisk latest releases"""
@@ -251,7 +252,7 @@ async def download_api(dl):
             f"`ETA` -> {time_formatter(eta)}"
         )
         if round(diff % 15.00) == 0 and display_message != current_message or (
-          downloaded == file_size):
+                downloaded == file_size):
             await dl.edit(current_message)
             display_message = current_message
         if downloaded == file_size:
@@ -273,6 +274,7 @@ async def download_api(dl):
     await dl.delete()
     driver.quit()
     return
+
 
 @register(outgoing=True, pattern=r"^.twrp(?: |$)(\S*)")
 async def twrp(request):
